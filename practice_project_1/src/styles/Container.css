@@ -1,0 +1,19 @@
+.mainDiv{
+    margin: auto; 
+    width: 40%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.mainDiv input {
+    width: 93%;
+    margin: 20px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.mainDiv label {
+    margin: 20px;
+}

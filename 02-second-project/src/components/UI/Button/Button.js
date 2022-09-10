@@ -25,11 +25,14 @@ import "./Button.css";
 
     If all goes well, we can go to the application and we'll see that it behaves exactly the same as it did before, when the 
     styles were indicated in a css file (in the case of this project, the Button.css file). 
-
-  
 */
 
+/*MEDIA QUERIES: We can use the @media tag to create media queries. Media queries allow us to use conditions when working with
+styles. This way, if a certain condition passed into the parentheses is true, the specified style is applied. In this case, we 
+can notice that based on the value for min-width, the width for the element will be either 'auto' or '100%'. */
+
 const Button = styled.button`
+    width: 100%;
     font: inherit;
     padding: 0.5rem 1.5rem;
     border: 1px solid #8b005d;
@@ -40,6 +43,11 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 768px){
+    width: auto;
+  }
+
   &:hover,
   &:active {
     background: #ac0e77;
